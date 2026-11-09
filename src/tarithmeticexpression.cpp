@@ -21,7 +21,7 @@ void TArithmeticExpression::ToPostfix()
                 break;
 
             case ')':
-                StackItem = st.get(); // хотя в методичке написано top() - хотя такого нет
+                StackItem = st.get(); // хотя в методичке написано top() - в .h такого нет
                 st.pop();
 
                 while (StackItem != '(')
